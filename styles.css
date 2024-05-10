@@ -1,0 +1,22 @@
+main{
+    display: grid;/* this creates the grid container */
+
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    /* this creates the columns of the grid,
+    it will create as many columns as it can fit in the container
+    with a minimum width of 14rem and a maximum width of 1fr */
+    gap:1rem;/* this creates a gap between the columns */
+    grid-template-rows: masonry;
+
+}
+
+figure {
+    margin: 0;
+    display: block;
+  }
+  
+  figure > img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
+  }
